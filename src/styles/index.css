@@ -1,11 +1,57 @@
-/* 
+.traffic-top {
+  width: 120px;
+  height: 160px;
+  background: black;
+  margin: auto;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.traffic-body {
+  width: 140px;
+  height: 380px;
+  padding: 20px;
+  background: black;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
 
-*/
+.light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: #333;
+  opacity: 0.2;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+
+.light.red { background: rgb(192, 3, 3); }
+.light.yellow { background: #d3c60c; }
+.light.green { background: rgb(2, 201, 2); }
+.light.purple {background: rgb(100, 3, 100);}
+
+
+.light.on {
+  filter: drop-shadow(0 0 2rem white);
+  opacity: 3;
+}
+
+
+.red-glow {
+  filter: drop-shadow(0 0 3.5rem rgba(255, 40, 40, 0.95));
+}
+
+.yellow-glow {
+  filter: drop-shadow(0 0 3.5rem rgba(255, 255, 120, 0.95));
+}
+
+.green-glow {
+  filter: drop-shadow(0 0 3.5rem rgba(80, 255, 80, 0.95));
+}
+
+.purple-glow {
+  filter: drop-shadow(0 0 3.5rem rgba(100, 5, 126, 0.95));
+}

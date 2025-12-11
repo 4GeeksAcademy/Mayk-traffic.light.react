@@ -1,0 +1,39 @@
+.traffic-top {
+  width: 10px;
+  height: 80px;
+  background: black;
+  margin: 0 auto;
+}
+
+.traffic-body {
+  width: 90px;
+  padding: 10px;
+  background: black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: #222;
+  opacity: 0.25;
+  filter: none;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+.light.red { background: #ff3b3b; }
+.light.yellow { background: #ffb800; }
+.light.green { background: #00c853; }
+
+
+.light.on {
+  opacity: 1;
+  filter:
+    drop-shadow(0 0 8px white)
+    drop-shadow(0 0 16px white);
+}
